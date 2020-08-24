@@ -1,0 +1,17 @@
+.header{
+    position:absolute;
+    width:100%;
+    z-index:1000;
+    &_box{
+        height:100%;    
+        position:absolute;
+        
+        &_img{
+            height:9.6rem;
+        }
+
+        @media(max-width:1050px){
+            display:none;
+        }
+    }
+}

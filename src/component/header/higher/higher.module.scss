@@ -1,0 +1,40 @@
+.higher{
+    width:100%;
+    padding:0px 1rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-weight:600;
+
+    &_box{
+        padding:1rem 0;
+        &_1{
+            margin-left:24rem;
+
+            @media(max-width:1050px){
+                margin-left:0;
+            }
+        }
+        
+    }
+    
+    &_link{
+        padding:.2rem 1.5rem;
+        color:#fff;
+        
+
+        &:hover{
+            text-decoration: none;
+            color:#ec522c;
+            
+        }
+
+    &_border{
+        border-left:1px solid #fff;
+    }
+
+    }
+
+
+
+}

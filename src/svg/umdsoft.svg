@@ -1,0 +1,23 @@
+<svg id="Group_65" data-name="Group 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268.511" height="104" viewBox="0 0 268.511 104">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.015" y1="0.5" x2="-0.027" y2="0.481" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09b7e2"/>
+      <stop offset="1" stop-color="#135ebd"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_174" data-name="Path 174" d="M0,0H188.248l55.994,53.527L188.248,104H0Z" transform="translate(24.269)" fill="#00a5ce"/>
+  <path id="Path_173" data-name="Path 173" d="M0,0H188.248l55.994,53.527L188.248,104H0Z" fill="url(#linear-gradient)"/>
+  <g id="UMDSOFT_SIMPLE" data-name="UMDSOFT SIMPLE" transform="translate(55 15.397)">
+    <g id="Group_56" data-name="Group 56" transform="translate(39.255 0)">
+      <g id="Group_54" data-name="Group 54">
+        <path id="Path_167" data-name="Path 167" d="M-198.009-767.109l-16.055,18.748,16.739.014,7.778-8.54Z" transform="translate(214.064 767.109)" fill="#f60"/>
+        <path id="Path_168" data-name="Path 168" d="M37.475-767.094,52.951-748.4l8.274-9.419-8.044-9.258Z" transform="translate(-21.42 767.095)" fill="#f60"/>
+      </g>
+      <g id="Group_55" data-name="Group 55" transform="translate(16.34 12.702)">
+        <path id="Path_167-2" data-name="Path 167" d="M-205.6-748.347l16.055-18.747-16.739-.015-7.778,8.54Z" transform="translate(229.351 767.109)" fill="#f60"/>
+        <path id="Path_168-2" data-name="Path 168" d="M61.225-748.4,45.749-767.094l-8.274,9.418,8.044,9.258Z" transform="translate(-37.475 767.16)" fill="#f60"/>
+      </g>
+    </g>
+    <text id="UMDSOFT" transform="translate(0 64.045)" fill="#fff" font-size="27" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">UMDSOFT</tspan></text>
+  </g>
+</svg>
