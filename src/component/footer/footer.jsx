@@ -34,7 +34,7 @@ export default Footer;
 const formContent = () => {
     return(
         <div className={cx('row rowP',st.footer_box)}>
-            <div className={cx('col-md-5 col-sm-12' )}>
+            <div className={cx('col-md-5 col-sm-12 my-3' )}>
                 <h1 className={cx(st.footer_h1)}>
                     Подпишитесь на нашу рассылку
                 </h1>
@@ -42,7 +42,7 @@ const formContent = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eligendi illum saepe. Labore.
                 </small>    
             </div>
-            <div className={cx('col-md-7 col-sm-12 position-relative')}>
+            <div className={cx('col-md-7 col-sm-12 position-relative my-3')}>
                 <form >
                     <input type="email" placeholder="Enter your email" className={cx(st.footer_input)} required />
                     <div style={{positon:'relative'}}>

@@ -5,6 +5,7 @@ import cx from 'classnames'
 import {BgComponent} from '../../../component'
 import {BgAnimation} from '../../../component';
 import {Button} from '../../../component';
+import {Dots} from '../../../component';
 
 //svg
 import img from '../../../svg/home_1.svg'
@@ -29,12 +30,26 @@ const HomeOne = () => {
                         </div>
                     </div>
                 </div>
-                <div className={cx('col-md-6 col-sm-12 text-center')}>
-                    <img src={img} alt="" className={cx('img_fluid')}/>
+                <div className={cx('col-md-6 col-sm-12 text-center align-self-center')}>
+                    <img src={img} alt="" className={cx('img-fluid')}/>
                 </div>
             </div>
             <BgAnimation/>
             <BgComponent bgImg={bgImg}  top="20%" left="-10%" zIndex="-1"/>
+            <Dots width="10px" height="10px" zIndex="-1" background="#833FB0" left="25%" top="20%" />
+            <Dots width="10px" height="10px" zIndex="-1" background="#833FB0" left="20%" top="30%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#833FB0" left="35%" top="45%" />
+            <Dots width="8px" height="8px" zIndex="-1" background="#833FB0" left="10%" top="58%" />
+            <Dots width="10px" height="10px" zIndex="-1" background="#833FB0" left="10%" top="85%" />
+            <Dots width="10px" height="10px" zIndex="-1" background="#833FB0" left="38%" top="65%" />
+            <Dots width="10px" height="10px" zIndex="-1" background="#833FB0" left="30%" top="83%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#C1A582" left="5%" top="18%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#C1A582" left="18%" top="22%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#C1A582" left="35%" top="28%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#C1A582" left="26%" top="45%" />
+            <Dots width="6px" height="6px" zIndex="-1" background="#C1A582" left="23%" top="70%" />
+            
+            
     </div>
     );
 }

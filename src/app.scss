@@ -8,8 +8,22 @@
 
 
 html{
-    font-size:62.5% !important;
+    font-size:62.5%;  //100% -> 16px -> 1rem,10/16 ->  62.5% -> 10px;
+
+    @media (max-width:576px){  //sm => 576px  
+        font-size:55%;         //1rem 4.8px  
+    }
+    @media (min-width:768px){
+        font-size:58%;         //1rem 8px
+    }
+    @media (min-width:960px){
+        font-size:60%;      //1rem 9px
+    }
+    @media (min-width:1140px){ 
+        font-size:62.5%;          //1rem 12px
+    }
 }
+
 
 body{
     font-family:sans-serif;
@@ -20,6 +34,10 @@ body{
 .rowP{
     margin:0;
     padding:2rem 6rem !important;
+
+    @media(max-width:768px){
+        padding:2rem 1rem !important;
+    }
 }
 
 

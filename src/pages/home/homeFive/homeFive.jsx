@@ -5,6 +5,7 @@ import st from './homeFive.module.scss'
 import {Title} from '../../../component'
 import {Button} from '../../../component'
 import {BgComponent} from '../../../component'
+import {Dots} from '../../../component'
 
 import map from '../../../svg/map.svg'
 import wave from '../../../svg/waveline.svg'
@@ -50,6 +51,14 @@ const HomeFive = () => {
                 <BgComponent bgImg={x} bottom="20%" left="20%" />
                 <BgComponent bgImg={x} bottom="15%" right="20%" />
                 <BgComponent bgImg={bgWaveLight} bottom="0%" zIndex="-15"/>
+                <Dots width="14px" height="14px" background="#FABBFF" top="15%"  left="15%" zIndex="-1" />
+                <Dots width="14px" height="14px" background="#FABBFF" top="20%"  right="20%" zIndex="-1" />
+                <Dots width="14px" height="14px" background="#FABBFF" bottom="20%"  right="60%" zIndex="-1" />
+                <Dots width="10px" height="10px" background="#FFC171" top="10%"  right="27%" zIndex="-1" />
+                <Dots width="10px" height="10px" background="#FFC171" top="80%"  right="35%" zIndex="-1" />
+                <Dots width="10px" height="10px" background="#FFC171" top="60%"  right="80%" zIndex="-1" />
+                <Dots width="10px" height="10px" background="#FFC171" top="30%"  right="65%" zIndex="-1" />
+                <Dots width="10px" height="10px" background="#FFC171" top="5%"  right="50%" zIndex="-1" />
         </div>
     );
 }

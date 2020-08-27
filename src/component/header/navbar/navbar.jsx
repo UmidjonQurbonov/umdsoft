@@ -9,10 +9,12 @@ const Navbar = () => {
 
     const [active, setActive] = useState(false);
     
-
    return (
         <div className={cx(st.navbar_container)}>
                 <div className={cx(st.navbar)}>
+                    {/* <div className={cx(st.close)}>
+                        <a href="#" onClick={console.log('clik')}>&times;</a>
+                    </div> */}
                     <ul className={cx(st.nav)}> 
                         <li className={cx(st.nav_item)}>
                             <NavLink to="/" className={cx(st.nav_link)} exact activeClassName={st.active}>Главная</NavLink>
