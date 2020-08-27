@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BgComponent = ({zIndex,bgImg, top, left, bottom, right}) => {
+const BgComponent = ({zIndex,bgImg, top, left, bottom, right, deg}) => {
     
     return (
         <img 
@@ -10,10 +10,12 @@ const BgComponent = ({zIndex,bgImg, top, left, bottom, right}) => {
                 top,
                 left,
                 right,
-                bottom
+                bottom,
+                transform:`rotate(${deg}deg)`
             }} 
             src={bgImg} 
             alt=""
+            className="img-fluid"
         />
     );
 }

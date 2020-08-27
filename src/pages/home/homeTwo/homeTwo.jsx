@@ -1,7 +1,7 @@
 import React from 'react'
 import cx from 'classnames'
 import st from './homeTwo.module.scss'
-import BgComponent from '../../../component/bg_component/bg_componnet'
+import {BgComponent} from '../../../component'
 import { Link } from 'react-router-dom'
 
 import leftImg from '../../../svg/bgLeft.svg'
@@ -13,19 +13,17 @@ import money from '../../../svg/money.svg'
 import portfel from '../../../svg/portfel.svg'
 import wb_bg from '../../../svg/wb_bg.svg'
 import play from '../../../svg/play.svg'
+import bg_wave from '../../../svg/bgWave.svg'
+import Title from '../../../component/title/title'
 
 const HomeTwo = () => {
+    const title = "Почему мы?";
+    const text = "Знаете ли вы, почему наши клиенты выбирают нас?";
+    
     return (
         <div className={cx(st.two)}>
-            <h1 className={cx(st.h1)}>
-                <i className={cx(st.i)}></i>
-                    Почему мы?
-                <i className={cx(st.i)}></i>
-            </h1>
-            <h5 className={cx(st.h5)}>
-                Знаете ли вы, почему наши клиенты выбирают нас?
-            </h5>
-            <div className={cx('row')}>
+            <Title title={title} text={text} />
+            <div className={cx('row rowP')}>
                 <div className={cx('col-md-6 col-sm-12  text-center align-self-center')}>
                     <img src={img} alt="" className={cx("img-fluid ")}/>
                 </div>
@@ -77,7 +75,7 @@ const HomeTwo = () => {
                 </div>
             </div>
 
-            <div className={cx('row')}>
+            <div className={cx('row rowP')}>
                 <div className={cx(st.content)}>
                     <img src={wb_bg} alt="" className={cx(st.content_img)}/>
                     <h1 className={cx(st.content_h1)}>
@@ -93,6 +91,7 @@ const HomeTwo = () => {
 
             <BgComponent bgImg={leftImg} top="0" left="0%" zIndex="-5"/>
             <BgComponent bgImg={rightImg} top="15%" right="0" zIndex="-5"/>
+            <BgComponent bgImg={bg_wave} bottom="0" right="0" zIndex="-5"/>
         </div>
     );
 }

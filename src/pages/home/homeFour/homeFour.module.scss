@@ -1,0 +1,56 @@
+.four{
+    position:relative;
+    padding:4rem 0;
+    padding-bottom:8rem;
+    
+    
+    &_box{
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+        &_button{
+            margin:.5rem;
+            color:rgba(0,0,0,.7);
+            font-size:1.5rem;
+            font-weight:bold;
+            border-radius:.5rem;
+
+            &:hover{
+                text-decoration:none;
+            }
+
+            &:not(:first-child){
+                padding:.7rem 1.2rem;
+                border:1px solid rgb(255, 56, 56);
+
+            }
+            
+        }
+    }
+
+    &_card{
+        text-align:center;
+        margin:2rem auto;
+        box-shadow:0px 3px 10px rgba(0,0,0,.1);
+        width:100%;
+        height:35vh;
+        position:relative;
+        background:#fff;
+        
+        &_box{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            width:14rem;
+            background:#ec522c;
+            box-shadow:none;
+            
+        }
+        
+    }
+
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import st from './homeOne.module.scss'
 import cx from 'classnames'
-import BgComponent from '../../../component/bg_component/bg_componnet'
 
-import BgAnimation from './../bg_animation/bg_animation';
-import { Button } from '../../../component/button/button';
+import {BgComponent} from '../../../component'
+import {BgAnimation} from '../../../component';
+import {Button} from '../../../component';
 
 //svg
 import img from '../../../svg/home_1.svg'
@@ -16,7 +16,7 @@ import bgImg from '../../../svg/intersection.svg'
 const HomeOne = () => {
     return (
         <div className={cx(st.home_one)}>
-            <div className={cx('row')}>
+            <div className={cx('row rowP')}>
                 <div className={cx('col-md-6 col-sm-12 align-self-center')}>
                     <div className={cx(st.home_one_box,'text-light ')}>
                         <h1 className={cx(st.home_one_h1,'text-uppercase')}>создание <span className={cx(st.text_warning)}>сайта</span></h1>

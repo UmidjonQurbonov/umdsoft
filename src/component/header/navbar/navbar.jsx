@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import st from './navbar.module.scss'
 import cx from 'classnames'
 import search from '../../../svg/search.svg'
-import { Button } from '../../button/button'
+import {Button} from '../../index'
 
 const Navbar = () => {
 
