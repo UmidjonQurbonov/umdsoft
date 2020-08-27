@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import st from './homeThree.module.scss'
 import cx from 'classnames'
 import CountUp from 'react-countup'
-import VisibilitySensor from 'react-visibility-sensor'
+import {Fade} from 'react-reveal'
 
 import {Title} from '../../../component'
 import {HomeCard} from '../../../component'
@@ -54,7 +54,7 @@ const HomeThree = () => {
         {img:stock, count:10, text:"Славные годы"},
     ]
     
-
+    const [content, setContent] = useState(false);
 
     const card = cards.map((card, i) => (
         <HomeCard img={card.img} deg={card.deg}
@@ -67,8 +67,7 @@ const HomeThree = () => {
     
     
     
-    
-    const cardCount = count.map((item, i) => (
+    const cardCount = content ?  count.map((item, i) => (
         <div className={cx('col-md-6 col-sm-12 my-3')} key={i}>
             <div className={cx(st.counter)}>
                 <div className={cx(st.counter_box)}>
@@ -76,25 +75,19 @@ const HomeThree = () => {
                 </div>
                 <div className={cx(st.counter_counter)}>
                     <h1 className={cx(st.counter_counter_h1)}>
-                        <CountUp 
-                            end={item.count}
-                            duration={3}
-                            redraw={true}
-                            
-                        >
-                            {({countUpRef,start}) => (
-                                <VisibilitySensor onChange={start} delayedCall>
-                                    <span ref={countUpRef} />
-                                </VisibilitySensor>
-                            )}
-                        </CountUp>
-                        +
+                            <CountUp 
+                                end={item.count}
+                                duration={3}
+                                redraw={true}
+                                delay={.5}
+                                
+                            />+
                     </h1>
                     <p className={cx(st.counter_counter_p)}>{item.text}</p>
                 </div>
             </div>
         </div>
-    ))
+    )) : null;
 
 
     return (
@@ -130,9 +123,11 @@ const HomeThree = () => {
 
                             />
                         </div>
-                        <div className={cx('row')}>
-                            {cardCount}
-                        </div>
+                        <Fade onReveal={() => setContent(true)}>
+                            <div className={cx('row')}>
+                                {cardCount}
+                            </div>
+                        </Fade>
                     </div>
                 </div>
                 <div className={cx("col-md-6 col-sm-12 mx-auto text-center")}>
