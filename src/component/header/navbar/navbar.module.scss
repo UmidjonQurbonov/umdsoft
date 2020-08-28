@@ -4,11 +4,23 @@
     padding:0px 1rem;
     display:flex;
     flex-direction:row;
+    align-items: center;
+    position:relative;
+    overflow:hidden;
+
+    @media (max-width:960px){
+        padding:1rem 4rem;
+    }
+
+    @media (max-width:450px){
+        padding:1rem;
+    }
     
 
 
     .navbar{
         margin-left:24rem;
+        
 
         @media(max-width:1050px){
             margin-left:0;
@@ -19,6 +31,8 @@
             display:flex;
             flex-direction:row;
             list-style: none;
+            
+            
 
             @media (max-width:960px){
                 position:fixed;
@@ -29,8 +43,9 @@
                 left:0;
                 width:250px;
                 justify-content: flex-start;
-                padding-top:3rem;
-                z-index: 1500;
+                padding-top:5rem;
+                // z-index: 1500;
+                transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
                 
                 
             }
@@ -75,6 +90,14 @@
         padding:.2rem 0rem;
         border-bottom:2px solid #ffc107;
         max-width: 0;
+
+        @media(max-width:380px){
+            max-width:80% !important;
+            margin-left:2rem;
+            margin-right:0;
+            padding:.3rem 1rem;
+            
+        }
         
         &:focus{
             border:none;
@@ -86,6 +109,9 @@
     &_button{
         cursor:pointer;
 
+        @media(max-width:380px){
+            display:none;
+        }
 
     }
 
@@ -100,6 +126,77 @@
     left:230px;
     top:0%;
     margin-bottom:2rem;
+    display:none;
+    cursor: pointer;
+
+}
+
+.open{
+    display:none;
+    cursor:pointer;
+    
+    
+    &:hover{
+    .openIcon{
+        &::after{
+            top:-7px;
+        }
+        &::before{
+            bottom:-7px;
+        }
+    }    
+    
+}
+
+.openIcon{
+    background:red;
+    width:23px;
+    height:2px;
+    align-self:center;
+    position:relative;
     display:inline-block;
 
+    &::after,
+    &::before{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:red;
+
+    }
+
+    &::after{
+        top:-6px;
+    }
+    &::before{
+        bottom:-6px;
+    }
+
+}
+    
+}
+
+
+
+@media (max-width:960px){
+    .show{
+        margin-left:0 !important;
+    
+    }
+    
+    .closed{
+        margin-left:-250px !important;
+    }
+
+    .open,
+    .close{
+        display:inline-block;
+    }
+}
+
+@media(max-width:300px){
+    .button{
+        display:none;
+    }
 }

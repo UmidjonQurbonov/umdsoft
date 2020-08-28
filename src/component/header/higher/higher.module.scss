@@ -21,7 +21,14 @@
     &_link{
         padding:.2rem 1.5rem;
         color:#fff;
-        
+    
+        @media(max-width:650px){
+            font-size:1.2rem;
+        }
+
+        @media(max-width:520px){
+            padding:.2rem .5rem;
+        }
 
         &:hover{
             text-decoration: none;
@@ -29,12 +36,15 @@
             
         }
 
-    &_border{
-        border-left:1px solid #fff;
-    }
+        &_border{
+            border-left:1px solid #fff;
+        }
 
     }
+}
 
-
-
+@media (max-width:480px){
+    .span{
+        display:none;
+    }
 }

@@ -68,7 +68,7 @@ export default HomeSix;
 const card = () => {
     return(
         <div  className={cx('row rowP')}>
-            <div className={cx('col-md-6 col-sm-12')}>
+            <div className={cx('col-md-6 col-sm-12 my-5')}>
                 <div className={cx(st.bg)} >
                     <img src={eBlue} alt="" className={cx(st.bg_img)} />
                 </div>
@@ -99,8 +99,8 @@ const card = () => {
                 </div>
             </div>
 
-            <div className={cx('col-md-6 col-sm-12')}>
-                <div className={cx(st.card)}>
+            <div className={cx('col-md-6 col-sm-12 my-5')}>
+                <div className={cx(st.card,st.card_2, 'mx-auto')}>
                     <div className={cx(st.card_box)}>
                         <img src={p2} alt="" className={cx(st.card_box_img, 'img-fluid')} />
                     </div>
@@ -126,7 +126,7 @@ const card = () => {
                     </div>
                 </div>
                 <div className={cx(st.bg_2)} >
-                    <img src={eRed} alt="" className={cx(st.bg_img_2)} />
+                    <img src={eRed} alt="" className={cx(st.bg_2_img_2)} />
                 </div>
             </div>
         </div>
@@ -155,12 +155,12 @@ const blog = () => {
                                 <div style={{alignSelf:"center", textAlign:'center'}} className={cx('col-sm-2')}>
                                     <img src={p3} alt="" className={cx(st.blog_content_img, 'img-fluid')}/>
                                 </div>
-                                <div className={cx('col-sm-8 row')}>
+                                <div className={cx('col-sm-8 row')} >
                                     <div className={cx(st.blog_span)}>Admin</div>
                                     <div className={cx(st.blog_span)}>27 July 2020</div>
                                     <div className={cx(st.blog_span)}>0 Comments</div>
                                 </div>
-                                <div className={cx('ml-auto col-sm-2')} >
+                                <div className={cx('ml-auto col-sm-2', st.next)} >
                                     <Link to="/blog">
                                         <img src={next} alt=""/>
                                     </Link>
@@ -194,7 +194,7 @@ const blog = () => {
                                     <div className={cx(st.blog_span)}>27 July 2020</div>
                                     <div className={cx(st.blog_span)}>0 Comments</div>
                                 </div>
-                                <div className={cx('ml-auto col-sm-2')} >
+                                <div className={cx('ml-auto col-sm-2',st.next)} >
                                     <Link to="/blog">
                                         <img src={next} alt=""/>
                                     </Link>

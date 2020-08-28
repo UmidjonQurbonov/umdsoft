@@ -20,12 +20,12 @@ const Higher = () => {
             </div>
             <div className={cx(st.higher_box_2, st.higher_box)}>
                 <Link to='/map' className={cx(st.higher_link,)}>
-                    <img src={location} alt="" className="mr-3"/>
-                    <span>Юнусабад 6</span>
+                    <img src={location} alt="" className={cx('img-fluid mr-3')}/>
+                    <span className={cx(st.span)}>Юнусабад 6</span>
                 </Link>
                 <a href='https://umail.uz' className={cx(st.higher_link,)}  rel="noopener noreferrer" target="_blank">
-                    <img src={mail} alt="" className="mr-3"/>
-                    <span>info@umdsoft.uz</span>
+                    <img src={mail} alt="" className={cx('img-fluid mr-3')}/>
+                    <span className={cx(st.span)}>info@umdsoft.uz</span>
                 </a>
                 <a href='https://www.twitter.com' className="mx-2 py-2" rel="noopener noreferrer" target="_blank">
                     <img src={twitter} alt=""/>

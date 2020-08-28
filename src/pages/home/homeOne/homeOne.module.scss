@@ -2,17 +2,19 @@
 {
     position: relative;
     width: 100%;
-    height: 110vh;
+    min-height: 110vh;
     background: linear-gradient(to right, #131370, #008EE2);
     overflow: hidden;
     z-index:5;
     padding:14rem 0;
-   
-    
 
-    
-    &_h1{
+   
+   &_h1{
         font-size:6.5rem;
+
+        @media (max-width:960px){
+            font-size:5rem;
+        }
 
     }
 
@@ -25,6 +27,12 @@
         font-weight:550;
         font-size:1.6rem;
         line-height: 1.8;
+    }
+
+    @media (max-width:768px){
+        &_img{
+            margin-top:6rem;
+        }
     }
 }
 

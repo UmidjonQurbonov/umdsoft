@@ -26,12 +26,12 @@ const HomeOne = () => {
                             аша миссия - оказание полного спектра услуг в сфере веб-разработки и автоматизации внутренних процессов
                         </small>
                         <div className={cx('pt-4')} style={{zIndex:'2000'}}>
-                            <Button to="/service" fontSize="1.8rem" text="ЗАКАЗАТ САЙТ" padding="1.5rem 2rem" color_1="#F93B0C" color_2="#BB2A02"/>
+                            <Button to="/service" fontSize="1.5rem" text="ЗАКАЗАТ САЙТ" padding="1.5rem 2rem" color_1="#F93B0C" color_2="#BB2A02"/>
                         </div>
                     </div>
                 </div>
-                <div className={cx('col-md-6 col-sm-12 text-center align-self-center')}>
-                    <img src={img} alt="" className={cx('img-fluid')}/>
+                <div className={cx('col-md-6 col-sm-12 text-center align-self-center ')}>
+                    <img className={cx('img-fluid',st.home_one_img)} src={img} alt=""/>
                 </div>
             </div>
             <BgAnimation/>

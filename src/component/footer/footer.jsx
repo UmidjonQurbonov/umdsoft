@@ -45,7 +45,7 @@ const formContent = () => {
             <div className={cx('col-md-7 col-sm-12 position-relative my-3')}>
                 <form >
                     <input type="email" placeholder="Enter your email" className={cx(st.footer_input)} required />
-                    <div style={{positon:'relative'}}>
+                    <div style={{positon:'relative', textAlign:'center'}}>
                         <input type="submit" value="Subscribe Now" className={cx(st.footer_submit)} />
                     </div>
                 </form>

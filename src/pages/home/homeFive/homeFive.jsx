@@ -45,12 +45,25 @@ const HomeFive = () => {
                 </div>
 
             </div>
-                <BgComponent bgImg={wave} top="50%" left="10%" />
-                <BgComponent bgImg={wave} top="60%" right="20%" />
-                <BgComponent bgImg={wave} top="10%" right="0%" />
-                <BgComponent bgImg={x} bottom="20%" left="20%" />
-                <BgComponent bgImg={x} bottom="15%" right="20%" />
-                <BgComponent bgImg={bgWaveLight} bottom="0%" zIndex="-15"/>
+                <div style={{top:"80%", left:"10%", position:'absolute', zIndex:"-15"}}>
+                    <img src={wave} alt="" className={cx(st.img)}/>
+                </div>
+                <div style={{top:"38%", right:"15%", position:'absolute', zIndex:"-15"}}>
+                    <img src={wave} alt="" className={cx(st.img)}/>
+                </div>
+                <div style={{top:"15%", left:"5%", position:'absolute', zIndex:"-15"}}>
+                    <img src={wave} alt="" className={cx(st.img)}/>
+                </div>
+                <div style={{bottom:"20%", left:"20%", position:'absolute', zIndex:"-1"}}>
+                    <img src={x} alt="" className={cx(st.imgx)}/>
+                </div>
+                <div style={{bottom:"15%", right:"21%", position:'absolute', zIndex:"-1"}}>
+                    <img src={x} alt="" className={cx(st.imgx)}/>
+                </div>
+                
+                
+                
+                <BgComponent bgImg={bgWaveLight} bottom="0%" zIndex="-16"/>
                 <Dots width="14px" height="14px" background="#FABBFF" top="15%"  left="15%" zIndex="-1" />
                 <Dots width="14px" height="14px" background="#FABBFF" top="20%"  right="20%" zIndex="-1" />
                 <Dots width="14px" height="14px" background="#FABBFF" bottom="20%"  right="60%" zIndex="-1" />

@@ -15,15 +15,23 @@
 .content_card{
     padding:10rem 5rem;
     position:relative;
+    
+    @media (max-width:400px){
+        padding:10rem 4rem;
+    }
+    @media (max-width:350px){
+        padding:10rem 0rem;
+    }
+
 }
 
 .card{
+    width:100%;
     position:relative;
     padding:0rem 3rem 2rem 3rem;
-    background: #ffffff;
+    background: #fff;
     box-shadow:0 2px 4px rgba(0,0,0,.2);
     
-
     &_box{
         
         
@@ -61,6 +69,10 @@
         background:#E5E5E5;
         align-items: center;
         padding:1rem 2rem;
+
+        @media (max-width:450px){
+            flex-direction:column;
+        }
         
     }
 
@@ -93,6 +105,12 @@
     }
 }
 
+.card_2{
+    @media (max-width:400px) {
+        margin-top:4rem;
+    }
+}
+
 .bg{
     position:absolute;
     left:-3.5rem;
@@ -101,6 +119,15 @@
         width:16rem;
         
     }
+
+    @media (max-width:400px){
+        left:4.75rem;
+
+    }
+
+    @media (max-width:350px){
+        display:none;
+    }    
     
 }
 
@@ -113,6 +140,15 @@
     &_img_2{
         width:16rem;
     }
+
+    @media (max-width:400px){
+        left:4.75rem;
+        top:-4rem;
+    }
+
+    @media (max-width:350px){
+        display:none;
+    }    
 }
 
 
@@ -141,6 +177,10 @@
     &_text_box{
         display: flex;
         padding:1rem 3rem;
+
+        @media (max-width:420px){
+            padding:1rem;
+        }
     }
 
     &_h5{
@@ -157,11 +197,20 @@
         background:#E5E5E5;
         padding:.8rem 2rem;
         align-items:center;
+
+        @media (max-width:370px){
+            justify-content: center;
+            flex-direction: column;
+        }
         
 
         &_img{
             width:6rem;
             border-radius:50%;
+
+            @media (max-width:370px){
+                margin-bottom:2rem;
+            }
         }
     }
 
@@ -173,6 +222,12 @@
 
         &:not(:first-child){
             border-left:1px solid rgba(0,0,0,.2);
+        }
+
+        @media (max-width:370px){
+            padding:.5rem;
+            font-size:1.2rem;
+            
         }
     }
 
@@ -187,4 +242,10 @@
     overflow:hidden;
     top:20%;
     left:40%;
+}
+
+.next{
+    @media (max-width:370px){
+        text-align: right !important;
+    }
 }

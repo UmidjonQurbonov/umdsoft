@@ -22,12 +22,12 @@ const HomeTwo = () => {
     
     return (
         <div className={cx(st.two)}>
-            <Title title={title} text={text} />
+            <Title title={title} text={text} width="85%" />
             <div className={cx('row rowP')}>
                 <div className={cx('col-md-6 col-sm-12  text-center align-self-center')}>
                     <img src={img} alt="" className={cx("img-fluid ")}/>
                 </div>
-                <div className={cx('col-md-6 col-sm-12 align-self-center')}>
+                <div className={cx('col-md-6 col-sm-12 align-self-center mt-5')}>
                     <div className={cx(st.box, st.box_blue)}>
                         <img src={raketa} alt="" className={cx(st.box_img, 'img-fluid ')}/>
                         <div className={cx(st.box_box)}>

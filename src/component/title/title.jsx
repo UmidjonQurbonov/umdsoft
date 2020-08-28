@@ -5,7 +5,7 @@ import cx from 'classnames'
 const Title = ({ title, text,width, iLeft=true, iRight=true, textAlign, justifyContent,fontSize, lineHeight }) => {
     
     return (
-       <div style={{width, margin:'0 auto',}}>
+       <div className={cx(st.title)} style={{width, margin:'0 auto',}}>
            <h1 className={cx(st.h1)} style={{justifyContent}}>
                 {iLeft ? <i className={cx(st.i)}></i> : null}
                     {title}

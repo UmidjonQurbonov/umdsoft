@@ -32,3 +32,16 @@
     
 }
 
+.img{
+    z-index:"-15";
+    @media (max-width:700px){
+        width:10rem;
+    }
+}
+.imgx{
+    z-index:"-15";
+    @media (max-width:700px){
+        width:5rem;
+    }
+}
+

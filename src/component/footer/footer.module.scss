@@ -57,6 +57,14 @@
         top:-50%;
         transform:translateY(66%);
         cursor:pointer;   
+
+        @media (max-width:500px){
+            width:100%;
+            position:relative;
+            font-size:1.3rem;
+            margin:0 auto;
+            right:0;
+        }
         
         &:active,
         &:visited{
@@ -74,8 +82,6 @@
 .dis{
     display:flex;
     flex-direction:column;
-    // width:75%;
-    
     
 }
 
