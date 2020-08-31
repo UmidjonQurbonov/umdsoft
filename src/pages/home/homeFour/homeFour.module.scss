@@ -12,21 +12,28 @@
         flex-grow: 1;
 
         &_button{
-            margin:.5rem;
+            margin:.7rem;
             color:rgba(0,0,0,.7);
             font-size:1.5rem;
             font-weight:bold;
             border-radius:.5rem;
-
-            &:hover{
-                text-decoration:none;
-            }
+            transition:transform .3s;
 
             &:not(:first-child){
                 padding:.7rem 1.2rem;
                 border:1px solid rgb(255, 56, 56);
 
             }
+
+            &:hover{
+                text-decoration:none;
+                background:linear-gradient(to right,#1A20A4,#0994EA);
+                color:#fff;
+                border:none;
+                
+            }
+
+            
             
         }
     }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import st from './navbar.module.scss'
 import cx from 'classnames'
@@ -9,37 +9,50 @@ const Navbar = () => {
 
     const [active, setActive] = useState(false);
     const [toggle, setToggle] = useState(false);
+    const [p, setP] = useState(0);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setP(position);
+    }
     
-   return (
-        <div className={cx(st.navbar_container)}>
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, {passive: true});
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
+    return (
+        <div className={cx(st.navbar_container, p > 100 ? st.katta : null)}>
                 <div className={cx(st.open)} onClick={() => setToggle(true)}>
                     <i className={cx(st.openIcon)}></i>
                 </div>
-                <div className={cx(st.navbar)}>
+                <div className={cx(st.navbar, p> 100 ? st.left : null)}>
                     <ul className={cx(st.nav, (toggle ? st.show : st.closed))}>
                         <div className={cx(st.close)} onClick={() => setToggle(false)}>
                             &times;
                         </div> 
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/" className={cx(st.nav_link)} exact activeClassName={st.active}>Главная</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} exact activeClassName={st.active}>Главная</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/about" className={cx(st.nav_link)} activeClassName={st.active}>О нас</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >О нас</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/service" className={cx(st.nav_link)} activeClassName={st.active}>Услуги</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >Услуги</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/work" className={cx(st.nav_link)} activeClassName={st.active}>Наши работы</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >Наши работы</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/price" className={cx(st.nav_link)} activeClassName={st.active}>Цены</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >Цены</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/blog" className={cx(st.nav_link)} activeClassName={st.active}>Блог</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >Блог</NavLink>
                         </li>
                         <li className={cx(st.nav_item)}>
-                            <NavLink to="/contact" className={cx(st.nav_link)} activeClassName={st.active}>Контакты</NavLink>
+                            <NavLink to="" className={cx(st.nav_link)} >Контакты</NavLink>
                         </li>
                     </ul>
 

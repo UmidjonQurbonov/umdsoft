@@ -2,6 +2,7 @@ import React from 'react';
 import st from './homeSix.module.scss'
 import cx from 'classnames'
 import {Link} from 'react-router-dom'
+import {Slide, Zoom} from 'react-reveal'
 
 import {Title,BgComponent,Button} from '../../../component';
 
@@ -68,67 +69,77 @@ export default HomeSix;
 const card = () => {
     return(
         <div  className={cx('row rowP')}>
-            <div className={cx('col-md-6 col-sm-12 my-5')}>
-                <div className={cx(st.bg)} >
-                    <img src={eBlue} alt="" className={cx(st.bg_img)} />
-                </div>
-                <div className={cx(st.card)}>
-                    <div className={cx(st.card_box)}>
-                        <img src={p1} alt="" className={cx(st.card_box_img, 'img-fluid')} />
+            <Slide left>
+                <div className={cx('col-md-6 col-sm-12 my-5')}>
+                    <div className={cx(st.bg)} >
+                        <img src={eBlue} alt="" className={cx(st.bg_img)} />
+                        <div className="clearImg"></div>
                     </div>
-                    <div className={cx(st.card_quote)}>
-                        <img src={quote} alt="" className={cx(st.card_quote_img)} />
-                    </div>
-                    <p className={cx(st.card_p)}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aperiam repudiandae adipisci accusamus quas placeat ut tempora at.
-                    </p>
-                    <div className={cx(st.card_content)}>
-                        <div>
-                            <h5 className={cx(st.card_h5)} >Marget Sunsan</h5>
-                            <small className={cx(st.card_small)}>Developer</small>
+                    <div className={cx(st.card)}>
+                        <div className={cx(st.card_box)}>
+                            <div className="clearImg"></div>
+                            <img src={p1} alt="" className={cx(st.card_box_img, 'img-fluid')} />
                         </div>
-                        <div className={cx(st.card_star)}>
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            
+                        <div className={cx(st.card_quote)}>
+                            <img src={quote} alt="" className={cx(st.card_quote_img)} />
+                            <div className="clearImg"></div>
+                        </div>
+                        <p className={cx(st.card_p)}>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aperiam repudiandae adipisci accusamus quas placeat ut tempora at.
+                        </p>
+                        <div className={cx(st.card_content)}>
+                            <div>
+                                <h5 className={cx(st.card_h5)} >Marget Sunsan</h5>
+                                <small className={cx(st.card_small)}>Developer</small>
+                            </div>
+                            <div className={cx(st.card_star)}>
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <div className="clearImg"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div className={cx('col-md-6 col-sm-12 my-5')}>
-                <div className={cx(st.card,st.card_2, 'mx-auto')}>
-                    <div className={cx(st.card_box)}>
-                        <img src={p2} alt="" className={cx(st.card_box_img, 'img-fluid')} />
-                    </div>
-                    <div className={cx(st.card_quote)}>
-                        <img src={quote} alt="" className={cx(st.card_quote_img)} />
-                    </div>
-                    <p className={cx(st.card_p)}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aperiam repudiandae adipisci accusamus quas placeat ut tempora at.
-                    </p>
-                    <div className={cx(st.card_content)}>
-                        <div>
-                            <h5 className={cx(st.card_h5)} >Marget Sunsan</h5>
-                            <small className={cx(st.card_small)}>Developer</small>
+            </Slide>
+            <Slide right>
+                <div className={cx('col-md-6 col-sm-12 my-5')}>
+                    <div className={cx(st.card,st.card_2, 'mx-auto')}>
+                        <div className={cx(st.card_box)}>
+                            <img src={p2} alt="" className={cx(st.card_box_img, 'img-fluid')} />
+                            <div className="clearImg"></div>
                         </div>
-                        <div className={cx(st.card_star)}>
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            <img src={star} alt="" className={cx(st.card_star_img)} />
-                            
+                        <div className={cx(st.card_quote)}>
+                            <img src={quote} alt="" className={cx(st.card_quote_img)} />
+                            <div className="clearImg"></div>
                         </div>
+                        <p className={cx(st.card_p)}>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aperiam repudiandae adipisci accusamus quas placeat ut tempora at.
+                        </p>
+                        <div className={cx(st.card_content)}>
+                            <div>
+                                <h5 className={cx(st.card_h5)} >Marget Sunsan</h5>
+                                <small className={cx(st.card_small)}>Developer</small>
+                            </div>
+                            <div className={cx(st.card_star)}>
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <img src={star} alt="" className={cx(st.card_star_img)} />
+                                <div className="clearImg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={cx(st.bg_2)} >
+                        <img src={eRed} alt="" className={cx(st.bg_2_img_2)} />
+                        <div className="clearImg"></div>
                     </div>
                 </div>
-                <div className={cx(st.bg_2)} >
-                    <img src={eRed} alt="" className={cx(st.bg_2_img_2)} />
-                </div>
-            </div>
+            </Slide>
         </div>
         
     )
@@ -137,74 +148,84 @@ const card = () => {
 const blog = () => {
     return (
         <div className={cx(st.blog)}>
-                <div className={cx(st.blog_card, 'row')}>
-                    <div className={cx(st.blog_img_box, 'col-md-4 col-sm-12')}>
-                        <img src={bImg1} alt="" className={cx(st.blog_img, 'img-fluid mx-auto')} />
-                    </div>
-                    <div className={cx(st.blog_text_box, 'col-md-8 col-sm-12')}>
-                        <div style={{alignSelf:'center'}}>
-                            <div>
-                                <Button text="SEO NEWS" padding="1rem 2rem" color_1="#EB4010" color_2="#FE6C0C"/>
-                            </div>
-                            <div>
-                                <h5 className={cx(st.blog_h5)}>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id deserunt consectetur officiis.
-                                </h5>
-                            </div>
-                            <div className={cx(st.blog_content)}>
-                                <div style={{alignSelf:"center", textAlign:'center'}} className={cx('col-sm-2')}>
-                                    <img src={p3} alt="" className={cx(st.blog_content_img, 'img-fluid')}/>
+                <Zoom>
+                    <div className={cx(st.blog_card, 'row')}>
+                        <div className={cx(st.blog_img_box, 'col-md-4 col-sm-12')}>
+                            <img src={bImg1} alt="" className={cx(st.blog_img, 'img-fluid mx-auto')} />
+                            <div className={cx("clearImg", st.bg_darkley)}></div>
+                        </div>
+                        <div className={cx(st.blog_text_box, 'col-md-8 col-sm-12')}>
+                            <div style={{alignSelf:'center'}}>
+                                <div>
+                                    <Button text="SEO NEWS" padding="1rem 2rem" color_1="#EB4010" color_2="#FE6C0C"/>
                                 </div>
-                                <div className={cx('col-sm-8 row')} >
-                                    <div className={cx(st.blog_span)}>Admin</div>
-                                    <div className={cx(st.blog_span)}>27 July 2020</div>
-                                    <div className={cx(st.blog_span)}>0 Comments</div>
+                                <div>
+                                    <h5 className={cx(st.blog_h5)}>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id deserunt consectetur officiis.
+                                    </h5>
                                 </div>
-                                <div className={cx('ml-auto col-sm-2', st.next)} >
-                                    <Link to="/blog">
-                                        <img src={next} alt=""/>
-                                    </Link>
+                                <div className={cx(st.blog_content)}>
+                                    <div style={{alignSelf:"center", textAlign:'center'}} className={cx('col-sm-2')}>
+                                        <img src={p3} alt="" className={cx(st.blog_content_img, 'img-fluid')}/>
+                                        <div className="clearImg"></div>
+                                    </div>
+                                    <div className={cx('col-sm-8 row')} >
+                                        <div className={cx(st.blog_span)}>Admin</div>
+                                        <div className={cx(st.blog_span)}>27 July 2020</div>
+                                        <div className={cx(st.blog_span)}>0 Comments</div>
+                                    </div>
+                                    <div className={cx('ml-auto col-sm-2', st.next)} >
+                                        <Link to="">
+                                            <img src={next} alt=""/>
+                                            <div className="clearImg"></div>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Zoom>
                 
-                <div className={cx(st.blog_card, 'row')}>
-                    <div className={cx(st.blog_img_box, 'col-md-4 col-sm-12')}>
-                        <img src={bImg2} alt="" className={cx(st.blog_img, 'img-fluid mx-auto')} />
-                    </div>
-                    <div className={cx(st.blog_text_box, 'col-md-8 col-sm-12')}>
-                        <div style={{alignSelf:'center'}}>
-                            <div>
-                                <Button text="SEO NEWS" padding="1rem 2rem" color_1="#EB4010" color_2="#FE6C0C"/>
-                            </div>
-                            <div>
-                                <h5 className={cx(st.blog_h5)}>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id deserunt consectetur officiis.
-                                </h5>
-                            </div>
-                            <div className={cx(st.blog_content)}>
-                                <div style={{alignSelf:"center", textAlign:'center'}} className={cx('col-sm-2')}>
-                                    <img src={p3} alt="" className={cx(st.blog_content_img, 'img-fluid')}/>
+                <Zoom>
+                    <div className={cx(st.blog_card, 'row')}>
+                        <div className={cx(st.blog_img_box, 'col-md-4 col-sm-12')}>
+                            <img src={bImg2} alt="" className={cx(st.blog_img, 'img-fluid')} />
+                            <div className={cx("clearImg", st.bg_darkley)}></div>
+                        </div>
+                        <div className={cx(st.blog_text_box, 'col-md-8 col-sm-12')}>
+                            <div style={{alignSelf:'center'}}>
+                                <div>
+                                    <Button text="SEO NEWS" padding="1rem 2rem" color_1="#EB4010" color_2="#FE6C0C"/>
                                 </div>
-                                <div className={cx('col-sm-8 row')}>
-                                    <div className={cx(st.blog_span)}>Admin</div>
-                                    <div className={cx(st.blog_span)}>27 July 2020</div>
-                                    <div className={cx(st.blog_span)}>0 Comments</div>
+                                <div>
+                                    <h5 className={cx(st.blog_h5)}>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id deserunt consectetur officiis.
+                                    </h5>
                                 </div>
-                                <div className={cx('ml-auto col-sm-2',st.next)} >
-                                    <Link to="/blog">
-                                        <img src={next} alt=""/>
-                                    </Link>
+                                <div className={cx(st.blog_content)}>
+                                    <div style={{alignSelf:"center", textAlign:'center'}} className={cx('col-sm-2')}>
+                                        <img src={p3} alt="" className={cx(st.blog_content_img, 'img-fluid')}/>
+                                        <div className="clearImg"></div>
+                                    </div>
+                                    <div className={cx('col-sm-8 row')}>
+                                        <div className={cx(st.blog_span)}>Admin</div>
+                                        <div className={cx(st.blog_span)}>27 July 2020</div>
+                                        <div className={cx(st.blog_span)}>0 Comments</div>
+                                    </div>
+                                    <div className={cx('ml-auto col-sm-2',st.next)} >
+                                        <Link to="">
+                                            <img src={next} alt=""/>
+                                            <div className="clearImg"></div>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                    
+                </Zoom>
             </div>
     )
 }

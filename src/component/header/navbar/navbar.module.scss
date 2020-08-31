@@ -1,4 +1,5 @@
 .navbar_container{
+    width:100%;
     background:#182752;
     font-weight:600;
     padding:0px 1rem;
@@ -7,7 +8,7 @@
     align-items: center;
     position:relative;
     overflow:hidden;
-
+    
     @media (max-width:960px){
         padding:1rem 4rem;
     }
@@ -200,3 +201,32 @@
         display:none;
     }
 }
+
+.katta{
+    position:fixed;
+    z-index: 6000;
+    top:0;
+    opacity:1;
+    animation: anim 1s linear 0s 1;
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+        top:-12rem;
+    }
+    50%{
+        top:-6rem;
+        opacity: .1;  
+    }
+
+    100%{
+        opacity: 1;
+        top:0;
+    }
+}
+
+.left{
+    margin-left:0 !important;
+}
+

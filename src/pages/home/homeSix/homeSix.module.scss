@@ -42,6 +42,7 @@
             display:inline-block;
             margin-top:-4rem;
             box-shadow:0 -2px 4px rgba(0,0,0,.1);
+            
         }
     }
 
@@ -172,6 +173,7 @@
         align-items: center;
         text-align:center;
         align-self:center;
+        overflow:hidden;
     }
 
     &_text_box{
@@ -231,6 +233,10 @@
         }
     }
 
+    &_img{
+        transition:all .4s;
+    }
+
 }
 
 
@@ -247,5 +253,22 @@
 .next{
     @media (max-width:370px){
         text-align: right !important;
+    }
+}
+
+.bg_darkley{
+    background:#1B1AA0;
+    opacity:0;
+    transition:all .5s;
+    
+}
+
+
+.blog_card:hover{
+    .blog_img{
+        transform:scale(1.05);
+    }
+    .bg_darkley{
+        opacity:.4;
     }
 }

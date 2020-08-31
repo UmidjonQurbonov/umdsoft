@@ -28,20 +28,20 @@ const HomeFour = () => {
     ]
 
     const buttonLink = links.map((link, i) => (
-        <Link className={cx(st.four_box_button)} to="/work" key={i}>
+        <Link to="" className={cx(st.four_box_button)}  key={i}>
             {link}
         </Link>
     ))
 
-    const fourCard = links.map((links) => (
-            <div className={cx('col-md-4 col-sm-6')} key={links}>
-                <div className={cx(st.four_card)}>
-                    <div className={cx(st.four_card_box)}>
-                        <img src={notFound} alt={links} className={cx('img-fluid')}/>
-                    </div>
-                </div>
-            </div>
-    ))
+    // const fourCard = links.map((links) => (
+    //         <div className={cx('col-md-4 col-sm-6')} key={links}>
+    //             <div className={cx(st.four_card)}>
+    //                 <div className={cx(st.four_card_box)}>
+    //                     <img src={notFound} alt={links} className={cx('img-fluid')}/>
+    //                 </div>
+    //             </div>
+    //         </div>
+    // ))
 
     return (
         <div className={cx(st.four)}>
@@ -52,14 +52,14 @@ const HomeFour = () => {
                 <div className={cx('col-sm-12 ')}>
                     <div className={cx(st.four_box)}>
                         <span className={cx(st.four_box_button, 'align-self-center')}>
-                            <Button  text="Все" color_1="#FB5E04" color_2="#ec522c" padding=".7rem 1.2rem" fontSize="1.6rem" borderRadius=".4rem" to="/work"/>
+                            <Button  text="Все" color_1="#FB5E04" color_2="#ec522c" padding=".7rem 1.2rem" fontSize="1.6rem" borderRadius=".4rem" to=""/>
                         </span>
                         {buttonLink}
                     </div>
                 </div>
             </div>
             <div className={cx('row rowP justify-content-center')}>
-                {fourCard}      
+                {/* {fourCard}       */}
             </div>
 
             <div style={{textAlign:'center', margin:"1rem 0"}}>
@@ -67,13 +67,13 @@ const HomeFour = () => {
                     color_1="#0994EA" 
                     color_2="#1A20A4" 
                     text="ВСЕ ПРОЕКТЫ" 
-                    to="/work" 
+                    to="" 
                     padding="1.5rem 3.5rem" 
                     fontSize="1.3rem"
                 />
             </div>
 
-            <BgComponent bgImg={bgLeftMiddle} zIndex="-1" left="0" top="30%" />
+            {/* <BgComponent bgImg={bgLeftMiddle} zIndex="-1" left="0" top="30%" /> */}
             <BgComponent bgImg={bgLeftSmall} zIndex="-1" right="0" top="10%" deg="180"/>
             <BgComponent bgImg={bgWave} zIndex="-1" right="0" bottom="0" />
         </div>  

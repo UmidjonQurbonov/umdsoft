@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import st from './homeThree.module.scss'
 import cx from 'classnames'
 import CountUp from 'react-countup'
-import {Fade} from 'react-reveal'
+import {Fade, Zoom} from 'react-reveal'
 
 import {Title} from '../../../component'
 import {HomeCard} from '../../../component'
@@ -32,7 +32,7 @@ import wave from '../../../svg/bgWaveLight.svg'
 const HomeThree = () => {
 
     const cards = [
-        {deg:"125",img: img1,title:"веб разработка", text:"Услуги по созданию сайтов и интернет проектов любой сложности."},
+        {img: img1,title:"веб разработка", text:"Услуги по созданию сайтов и интернет проектов любой сложности."},
         {deg:"155",img: img2,title:"мобильная разработка", text:"Разработка мобильных приложений. Дизайн - прототипирование, программирование и тех поддержка."},
         {deg:"185",img: img3,title:"интеграция crm", text:"Разработка CRM для автоматизации бизнеса, настройка CRM с использованием современных веб - технологий."},
         {deg:"-65",img: img4,title:"продвижения сайтов", text:"Комплексные услуги по оптимизации сайтов и CEO - продвижению, вывод в топ."},
@@ -103,7 +103,7 @@ const HomeThree = () => {
                     color_1="#0994EA" 
                     color_2="#1A20A4" 
                     text="ВСЕ УСЛУГИ" 
-                    to="/service" 
+                    to="" 
                     padding="1.5rem 3.5rem" 
                     fontSize="1.3rem"
                 />
@@ -130,9 +130,14 @@ const HomeThree = () => {
                         </Fade>
                     </div>
                 </div>
-                <div className={cx("col-md-6 col-sm-12 mx-auto text-center")}>
-                    <img src={counter} alt="" className={cx("img-fluid")}/>
-                </div>
+
+                <Zoom>
+                    <div className={cx("col-md-6 col-sm-12 mx-auto text-center")}>
+                        <img src={counter} alt="" className={cx("img-fluid")}/>
+                        <div className="clearImg"></div>
+                    </div>
+                </Zoom>
+                
             </div>
 
             <BgComponent bgImg={leftSmall} top="15%" left="0" zIndex="-1"/>

@@ -95,13 +95,18 @@
 .p{
     color:rgba(255,255,255,.4);
     font-weight:bold;
-    line-height:1.8;
+    display:inline-block;
     
-    
+    &:not(:first-child){
+        margin-top:1rem;
+    }
+
     &:hover{
         text-decoration:none;
         color:#ffffff;
     }
+
+    
 }
 
 .a{

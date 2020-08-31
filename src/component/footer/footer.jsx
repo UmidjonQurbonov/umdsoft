@@ -66,16 +66,16 @@ const about = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facilis impedit.
                 </p>
                 <div style={{marginTop:"2rem"}}>
-                    <a className={cx(st.a)} href="https://www.instagram.com" rel="noopener noreferrer" target="_blank" >
+                    <a className={cx(st.a)} href="#" >
                         <img src={instagram} alt="" className={cx('img-fluid')}/>
                     </a>
-                    <a className={cx(st.a)} href="https://telegram.org" rel="noopener noreferrer" target="_blank">
+                    <a className={cx(st.a)} href="#" >
                         <img src={telegram} alt="" className={cx('img-fluid')}/>
                     </a>
-                    <a className={cx(st.a)} href="https://www.facebook.com" rel="noopener noreferrer" target="_blank">
+                    <a className={cx(st.a)} href="#" >
                         <img src={facebook} alt="" className={cx('img-fluid')}/>    
                     </a>
-                    <a className={cx(st.a)} href="https://www.youtube.com" rel="noopener noreferrer" target="_blank">
+                    <a className={cx(st.a)} href="#" >
                         <img src={youtube} alt="" className={cx('img-fluid')}/>
                     </a>
                 </div>
@@ -92,11 +92,11 @@ const links = () => {
                     important links
                 </h2>
                 <div className={cx(st.dis)}>
-                    <Link to="/about" className={cx(st.p, 'text-capitalize')}>about us</Link>
-                    <Link to="/work" className={cx(st.p, 'text-capitalize')}>Projects</Link>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>Services</Link>
-                    <Link to="/blog" className={cx(st.p, 'text-capitalize')}>Blog</Link>
-                    <Link to="/contact" className={cx(st.p, 'text-capitalize')}>Contact</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>about us</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>Projects</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>Services</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>Blog</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>Contact</Link>
                 </div>
                 
             </div>
@@ -112,11 +112,11 @@ const featured = () => {
                     Featured Service
                 </h2>
                 <div className={cx(st.dis)}>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>it menagment</Link>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>development</Link>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>services</Link>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>UI/UX design</Link>
-                    <Link to="/service" className={cx(st.p, 'text-capitalize')}>support engineer</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>it menagment</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>development</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>services</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>UI/UX design</Link>
+                    <Link to="" className={cx(st.p, 'text-capitalize')}>support engineer</Link>
                 </div>
                 
             </div>
@@ -131,20 +131,20 @@ const contact = () => {
                     contact
                 </h2>
                 <div className={cx(st.dis)}>
-                    <a href="telephone:+998917911122" className={cx(st.p, 'text-capitalize my-3')} rel="noopener noreferrer" target="_blank">
+                    <a href="" className={cx(st.p, 'text-capitalize my-3')} >
                         <img src={phone} alt="" className={cx(st.img)} />
                         <span style={{display:'inline-block'}}>
                             +998917911122
                         </span>
                     </a>
-                    <a href="https://umail.uz" className={cx(st.p, 'text-capitalize my-3')} rel="noopener noreferrer" target="_blank">
+                    <a href="" className={cx(st.p, 'text-capitalize my-3')} >
                         <img src={mail} alt="" className={cx(st.img)} />
                         <span style={{display:'inline-block'}}>
                             info@umdsoft.uz
                         </span>
                     </a>
-                    <a href="https://www.google.com/maps/place/%D0%AE%D0%BD%D1%83%D1%81%D0%BE%D0%B1%D0%BE%D0%B4-6,+%D0%A2%D0%BE%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+O%60zbekiston/@41.3686185,69.2625553,16z/data=!4m5!3m4!1s0x38ae8cc31ff417dd:0x6a5ba108648297a9!8m2!3d41.3683947!4d69.2646587"
-                        rel="noopener noreferrer" target="_blank"
+                    <a href=""
+                        
                         className={cx(st.p, 'text-capitalize my-3')}>
                         <img src={location} alt="" className={cx(st.img)} />
                         <span style={{display:'inline-block'}}>

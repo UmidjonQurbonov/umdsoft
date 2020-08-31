@@ -34,14 +34,32 @@
 
 .img{
     z-index:"-15";
+    animation: yurish 10s linear 0s infinite;
+
     @media (max-width:700px){
         width:10rem;
     }
+
 }
+
+
 .imgx{
     z-index:"-15";
+    animation: aylan 13s linear 0s infinite;
+
     @media (max-width:700px){
         width:5rem;
     }
+
+}
+
+@keyframes aylan{
+    from{transform:rotate(0deg)};
+    to{transform:rotate(360deg)};
+}
+@keyframes yurish{
+    0%{transform:translateX(0rem)}
+    50%{transform:translateX(4rem)}
+    100%{transform:translateX(0rem)}
 }
 

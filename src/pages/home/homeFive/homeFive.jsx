@@ -33,7 +33,7 @@ const HomeFive = () => {
                             color_1="#0994EA" 
                             color_2="#1A20A4" 
                             text={text[2]}
-                            to="/contact" 
+                            to="" 
                             padding="1.2rem 4.5rem" 
                             fontSize="1.3rem"
                             borderRadius="3rem"
@@ -51,10 +51,10 @@ const HomeFive = () => {
                 <div style={{top:"38%", right:"15%", position:'absolute', zIndex:"-15"}}>
                     <img src={wave} alt="" className={cx(st.img)}/>
                 </div>
-                <div style={{top:"15%", left:"5%", position:'absolute', zIndex:"-15"}}>
+                <div style={{top:"20%", left:"5%", position:'absolute', zIndex:"-15"}}>
                     <img src={wave} alt="" className={cx(st.img)}/>
                 </div>
-                <div style={{bottom:"20%", left:"20%", position:'absolute', zIndex:"-1"}}>
+                <div style={{bottom:"25%", left:"20%", position:'absolute', zIndex:"-1"}}>
                     <img src={x} alt="" className={cx(st.imgx)}/>
                 </div>
                 <div style={{bottom:"15%", right:"21%", position:'absolute', zIndex:"-1"}}>
@@ -64,14 +64,16 @@ const HomeFive = () => {
                 
                 
                 <BgComponent bgImg={bgWaveLight} bottom="0%" zIndex="-16"/>
-                <Dots width="14px" height="14px" background="#FABBFF" top="15%"  left="15%" zIndex="-1" />
-                <Dots width="14px" height="14px" background="#FABBFF" top="20%"  right="20%" zIndex="-1" />
-                <Dots width="14px" height="14px" background="#FABBFF" bottom="20%"  right="60%" zIndex="-1" />
-                <Dots width="10px" height="10px" background="#FFC171" top="10%"  right="27%" zIndex="-1" />
-                <Dots width="10px" height="10px" background="#FFC171" top="80%"  right="35%" zIndex="-1" />
-                <Dots width="10px" height="10px" background="#FFC171" top="60%"  right="80%" zIndex="-1" />
-                <Dots width="10px" height="10px" background="#FFC171" top="30%"  right="65%" zIndex="-1" />
-                <Dots width="10px" height="10px" background="#FFC171" top="5%"  right="50%" zIndex="-1" />
+                <div className="dots_box dots_box_2">
+                    <Dots width="14px" height="14px" background="#FABBFF" top="15%"  left="15%" zIndex="-1" />
+                    <Dots width="14px" height="14px" background="#FABBFF" top="20%"  right="20%" zIndex="-1" />
+                    <Dots width="14px" height="14px" background="#FABBFF" bottom="20%"  right="60%" zIndex="-1" />
+                    <Dots width="10px" height="10px" background="#FFC171" top="10%"  right="27%" zIndex="-1" />
+                    <Dots width="10px" height="10px" background="#FFC171" top="80%"  right="35%" zIndex="-1" />
+                    <Dots width="10px" height="10px" background="#FFC171" top="60%"  right="80%" zIndex="-1" />
+                    <Dots width="10px" height="10px" background="#FFC171" top="30%"  right="65%" zIndex="-1" />
+                    <Dots width="10px" height="10px" background="#FFC171" top="13%"  right="50%" zIndex="-1" />
+                </div>
         </div>
     );
 }
