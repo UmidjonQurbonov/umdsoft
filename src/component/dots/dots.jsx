@@ -2,13 +2,6 @@ import React from 'react'
 
 
 class Dots extends React.Component{
-    constructor(props){
-        super(props);
-        
-    }
-
-
-
     render(){
         const {width, height, background, left, right, bottom, top, zIndex} = this.props;
         return (

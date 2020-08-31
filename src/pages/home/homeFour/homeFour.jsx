@@ -8,9 +8,9 @@ import {Button} from '../../../component'
 import {BgComponent} from '../../../component'
 
 
-import notFound from '../../../svg/notFound.svg'
+// import notFound from '../../../svg/notFound.svg'
 import bgLeftSmall from '../../../svg/bgLeftSmall.svg'
-import bgLeftMiddle from '../../../svg/bgLeftMiddle.svg'
+// import bgLeftMiddle from '../../../svg/bgLeftMiddle.svg'
 import bgWave from '../../../svg/bgWave.svg'
 
 

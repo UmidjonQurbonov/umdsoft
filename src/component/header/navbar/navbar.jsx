@@ -64,7 +64,7 @@ const Navbar = () => {
                         <img src={search} alt=""  className={cx(st.search_button)} onClick={() => setActive(!active)} />
                     </form>
                     <div className={cx(st.button)} style={{alignSelf:'center'}}>
-                        <Button text="РАСЧЕТ СТОИМОСТИ" padding="1.1rem 1.8rem"  color_1="#F93B0C" color_2="#BB2A02"/>
+                        <Button text="РАСЧЕТ СТОИМОСТИ" padding="1.1rem 1.8rem"  color_1="#F93B0C" color_2="#BB2A02" />
                     </div>
                 </div>
             
