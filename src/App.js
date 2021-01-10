@@ -6,7 +6,7 @@ import { Home } from './pages'
 
 
 class app extends Component {
-	state = {  }
+	
 
 	render() {
 
